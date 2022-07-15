@@ -29,7 +29,7 @@ There are several environment variables which are required to run OMOP-on-FHIR, 
 * MEDICATION_TYPE - This variable allows users to control the representation of Medications in the MedicationRequest resource. The options are as follows:
   * "local" - The Medication is represented as a contained resource.
   * "link" - The Medication resource is provided separately and a reference is created.
-  * "code" - The Medication is represented as a CodeableConcept.
+  * "code" - The Medication is represented as a CodeableConcept. (Note: If no environment variable is provided, it will default to "code".)
 
 ## Deployment
 ### Docker
